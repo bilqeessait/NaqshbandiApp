@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="s0" xml:space="preserve">
+    <value>How to Perform Sunnah Salaah</value>
+  </data>
+  <data name="s1" xml:space="preserve">
+    <value>Step 1: Begin with your niyyah (intention)</value>
+  </data>
+  <data name="s10" xml:space="preserve">
+    <value>Subhana Rabbiyal Adhim {Glory be to my Lord Almighty} x3</value>
+  </data>
+  <data name="s11" xml:space="preserve">
+    <value>Step 6: Next stand up from the bowing position. While coming up from ruku your hands should be at your side and not crossed at the chest. Then recite the following:</value>
+  </data>
+  <data name="s12" xml:space="preserve">
+    <value>Sami’Allahu liman hamidah {Allah hears those who praise Him}</value>
+  </data>
+  <data name="s13" xml:space="preserve">
+    <value>Rabbana lakal hamd {Our lord, to you be the praise}</value>
+  </data>
+  <data name="s14" xml:space="preserve">
+    <value>Step 7: Say Allahu Akbar and go down for sajdah (prostration). There should 5 points of contact with the ground, your forehead, nose, palms of hand, knees, and toes of the feet. Put your head between your palms such that your thumbs are aligned with earlobes. The elbows should be raised away from the ground. Then recite the following 3 times:</value>
+  </data>
+  <data name="s15" xml:space="preserve">
+    <value>Subhana Rabbiyal A’la {How Perfect is my Lord, the Highest}</value>
+  </data>
+  <data name="s16" xml:space="preserve">
+    <value>Step 8: Say Allahu Akbar, sit upright. It is sunnah to keep your right foot up and lay the left foot on the ground. This position is called Jalsah Al-istiraha or the sitting position of the prayer. Rest your hands on the thighs with fingers reaching the knees. Recite the following:</value>
+  </data>
+  <data name="s17" xml:space="preserve">
+    <value>Rabbighfir li {O my Lord! Forgive me}</value>
+  </data>
+  <data name="s18" xml:space="preserve">
+    <value>Say Allahu Akbar and go down for your second sujud, repeat Step 7. After completing Step 7, say Allahu Akbar and stand back up and cross your arms just as before. This represents one complete rakat of salah.</value>
+  </data>
+  <data name="s19" xml:space="preserve">
+    <value>Now repeat Steps 4 to 8.</value>
+  </data>
+  <data name="s2" xml:space="preserve">
+    <value>"I intend to perform the (number of rakats) of the (name of prayer)." An example would be; "I intend to perform 4 rakats of the sunnah salaah for the Asr prayer".</value>
+  </data>
+  <data name="s20" xml:space="preserve">
+    <value>Step 9: When you complete the second sujood of the second rakat stay seated in position of Jalsah (the seating position explained in Step 8). Then recite the following (The Tashahhud}:</value>
+  </data>
+  <data name="s21" xml:space="preserve">
+    <value>Attahiyat lillahi wa salawatu wa’t-tayyibat, as-salamu ‘alayka ayyuha’n-Nabiyyu wa rahmat-Allahi wa barakatuhu. As-salamu ‘alayna wa ‘alaa ‘ibad-Illah is-saliheen {All the best compliments and the prayers and the good things are for Allah. Peace and Allah’s Mercy and Blessings be on you, O Prophet! Peace be on us and on the pious slaves of Allah}</value>
+  </data>
+  <data name="s22" xml:space="preserve">
+    <value>Then recite the Shahadah as shown below. While doing this ball up your right hand into a fist and raise your index finger. This symbolizes the tawhid or oneness of Allah.</value>
+  </data>
+  <data name="s23" xml:space="preserve">
+    <value>Ashhadu alla ilaha illallah wa ashhadu anna muhammadan ‘abduhu wa rasuluhu {I testify that none has the right to be worshipped but Allah, and I also testify that Muhammad is Allah’s slave and His Messenger.}</value>
+  </data>
+  <data name="s24" xml:space="preserve">
+    <value>At this point, you would say Allahu Akbar and begin your third rakat and fourth rakat. Follow the steps listed above until you reach the second Jalsah of your fourth rakat.</value>
+  </data>
+  <data name="s25" xml:space="preserve">
+    <value>Step 10: After you have completed Step 9, begin reciting the following whilst in the Jalsah position:</value>
+  </data>
+  <data name="s26" xml:space="preserve">
+    <value>Allahumma salli ‘ala Muhammadin Wa ‘ala ali Muhammadin Kama sallaita ‘ala Ibrahima wa ‘ala ali Ibrahima wa barik ‘ala Muhammadin wa ‘ala ali Muhammadin Kama barakta ‘ ala Ibrahima Wa ‘ ala ali Ibrahima Fil a’lamina Innaka hamidun Majid {O Allah, let Your mercy come upon Muhammad and the family of Muhammad as You let it come upon Ibrahim and the family of Ibrahim O Allah, bless Muhammad and the family of Muhammad as You blessed Ibrahim and the family of Ibrahim. Truly You are Praiseworthy and Glorious}</value>
+  </data>
+  <data name="s27" xml:space="preserve">
+    <value>Step 11: Turn your face towards looking over your right shoulder, reciting the line below. Then turn your face towards looking over your left shoulder and repeat it,</value>
+  </data>
+  <data name="s28" xml:space="preserve">
+    <value>Assalamu alaikum wa rahmatullah {Peace and the mercy of Allah be on you}</value>
+  </data>
+  <data name="s3" xml:space="preserve">
+    <value>Step 2: Setup your Salaah Area</value>
+  </data>
+  <data name="s4" xml:space="preserve">
+    <value>Lay down your prayer mat in a clean area, in the direction of the Qiblah (the direction of the Kabaa in Mecca). Direct your gaze towards the place of your sajdah (prostration). Now, with palms open, raise your hands to your ears and say the Takbir (Allahu Akbar) which means Allah is the greatest. Your prayer has now commenced. Women praying should raise their hands to their shoulders.</value>
+  </data>
+  <data name="s5" xml:space="preserve">
+    <value>Step 3: After Takbir, place cross your hands at chest level grabbing your left wrist with your right hand. Then recite the following:</value>
+  </data>
+  <data name="s6" xml:space="preserve">
+    <value>Subhaanaka Allaahumma wa bihamdika, wa tabaarakasmuka, wa ta’aalaa jadduka, wa laa ‘ilaaha ghayruka {Glory and praise be to You, O Allah. Blessed be Your name and exalted be Your majesty, there is none worthy of worship except You}</value>
+  </data>
+  <data name="s7" xml:space="preserve">
+    <value>Bismillah hir rahman nir raheem {In the name of Allah, the Entirely Merciful, the Especially Merciful}</value>
+  </data>
+  <data name="s8" xml:space="preserve">
+    <value>Step 4: After this, recite Surah Al-Fatiha.</value>
+  </data>
+  <data name="s9" xml:space="preserve">
+    <value>Step 5: Say Allahu Akbar, bend down for ruku. Ruku is the position where you keep your head and back aligned and put your hands on your knees. Then recite the following 3 times:</value>
+  </data>
+  <data name="surahfatiha" xml:space="preserve">
+    <value>Surah Fatiha</value>
+  </data>
+</root>

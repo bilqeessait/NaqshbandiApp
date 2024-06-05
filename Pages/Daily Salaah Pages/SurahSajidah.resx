@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="s0" xml:space="preserve">
+    <value>The Prostration</value>
+  </data>
+  <data name="s1" xml:space="preserve">
+    <value>Bismillah hir rahman nir raheem {In the name of Allah, the Entirely Merciful, the Especially Merciful}</value>
+  </data>
+  <data name="s10" xml:space="preserve">
+    <value>Wa qaalooo ‘a-izaa dalalnaa fil ardi ‘a-innaa lafee khalqin jadeed; bal hum biliqaaa’i rabbihim kaafiroon {And they say, “When we are lost within the earth, will we indeed be [recreated] in a new creation?” Rather, they are, in [the matter of] the meeting with their Lord, disbelievers}</value>
+  </data>
+  <data name="s11" xml:space="preserve">
+    <value>Qul yatawaffaakum malakul mawtil lazee wukkila bikum Thumma ilaa rabbikum turja’oon {Say, “The angel of death will take you who has been entrusted with you. Then to your Lord you will be returned."}</value>
+  </data>
+  <data name="s12" xml:space="preserve">
+    <value>Wa law taraaa izil mujrimoona naakisoo ru’oosihim ‘inda rabbihim rabbanaaa absarnaa wa sami’naa farji’naa na’mal saalihan innaa mooqinoon {If you could but see when the criminals are hanging their heads before their Lord, [saying], “Our Lord, we have seen and heard, so return us [to the world]; we will work righteousness. Indeed, we are [now] certain.”}</value>
+  </data>
+  <data name="s13" xml:space="preserve">
+    <value>Wa law shi’naa la-aatainaa kulla nafsin hudaahaa wa laakin haqqal qawlu minnee la amla’anna jahannama minal jinnati wannaasi ajma’een {And if We had willed, We could have given every soul its guidance, but the word from Me will come into effect [that] “I will surely fill Hell with jinn and people all together}</value>
+  </data>
+  <data name="s14" xml:space="preserve">
+    <value>Fazooqoo bimaa naseetum liqaaa’a yawmikum haaza innaa naseenaakum wa zooqoo ‘azaabal khuldi bimaa kuntum ta’maloon {So taste [punishment] because you forgot the meeting of this, your Day; indeed, We have [accordingly] forgotten you. And taste the punishment of eternity for what you used to do.”}</value>
+  </data>
+  <data name="s15" xml:space="preserve">
+    <value>Innamaa yu’minu bi aayaatinal lazeena izaa zukkiroo bihaa kharroo sujjadanw wa sabbahoo bihamdi rabbihim wa hum laa yastakbiroon (make sajda) {Only those believe in Our verses who, when they are reminded by them, fall down in prostration and exalt [Allah] with praise of their Lord, and they are not arrogant}</value>
+  </data>
+  <data name="s16" xml:space="preserve">
+    <value>Tatajaafaa junoobuhum ‘anil madaaji’i yad’oona rabbahum khawfanw wa tama’anw wa mimmaa razaqnaahum yunfiqoon {They arise from [their] beds; they supplicate their Lord in fear and aspiration, and from what We have provided them, they spend}</value>
+  </data>
+  <data name="s17" xml:space="preserve">
+    <value>Falaa ta’lamu nafsum maaa ukhfiya lahum min qurrati a’yunin jazaaa’am bimaa kaanoo ya’maloon {And no soul knows what has been hidden for them of comfort for eyes as reward for what they used to do}</value>
+  </data>
+  <data name="s18" xml:space="preserve">
+    <value>Afaman kaana mu’minan kaman kaana faasiqaa; laa yasta woon {Then is one who was a believer like one who was defiantly disobedient? They are not equal}</value>
+  </data>
+  <data name="s19" xml:space="preserve">
+    <value>Ammal lazeena aamanoo wa ‘amilus saalihaati falahum jannaatul ma’waa nuzulam bimaa kaanoo ya’maloon {As for those who believed and did righteous deeds, for them will be the Gardens of Refuge as accommodation for what they used to do}</value>
+  </data>
+  <data name="s2" xml:space="preserve">
+    <value>Alif-Laaam-Meeem</value>
+  </data>
+  <data name="s20" xml:space="preserve">
+    <value>Wa ammal lazeena fasaqoo fama’waahumun Naaru kullamaaa araadooo any yakhrujoo minhaaa u’eedoo feehaa wa qeela lahum zooqoo ‘azaaaban Naaril lazee kuntum bihee tukazziboon {But as for those who defiantly disobeyed, their refuge is the Fire. Every time they wish to emerge from it, they will be returned to it while it is said to them, “Taste the punishment of the Fire which you used to deny.”}</value>
+  </data>
+  <data name="s21" xml:space="preserve">
+    <value>Wa lanuzeeqan nahum minal ‘azaabil adnaa doonal ‘azaabil akbari la’allahum yarji’oon {And we will surely let them taste the nearer punishment short of the greater punishment that perhaps they will repent}</value>
+  </data>
+  <data name="s22" xml:space="preserve">
+    <value>Wa man azlamu mimman zukkira bi aayaati rabbihee summa a’rada ‘anhaa; innaa minal mujrimeena muntaqimoon {And who is more unjust than one who is reminded of the verses of his Lord; then he turns away from them? Indeed We, from the criminals, will take retribution}</value>
+  </data>
+  <data name="s23" xml:space="preserve">
+    <value>Wa laqad aatainaa Moosal Kitaaba falaa takun fee miryatim mil liqaaa’ihee wa ja’alnaahu hudal li Baneee Israaa’eel {And We certainly gave Moses the Scripture, so do not be in doubt over his meeting. And we made the Torah guidance for the Children of Israel}</value>
+  </data>
+  <data name="s24" xml:space="preserve">
+    <value>Wa ja’alnaa minhum a’immatany yahdoona bi amrinaa lammaa sabaroo wa kaanoo bi aayaatinaa yooqinoon {And We made from among them leaders guiding by Our command when they were patient and [when] they were certain of Our signs}</value>
+  </data>
+  <data name="s25" xml:space="preserve">
+    <value>Inna rabbaka huwa yafsilu bainahum yawmal qiyaamati feemaa kaanoo feehi yakhtalifoon {Indeed, your Lord will judge between them on the Day of Resurrection concerning that over which they used to differ}</value>
+  </data>
+  <data name="s26" xml:space="preserve">
+    <value>Awalam yahdi lahum kam ahlaknaa min qablihim minal qurooni yamshoona fee masaakinihim; inna fee zaalika la aayaatin afalaa yasma’oon {Has it not become clear to them how many generations We destroyed before them, [as] they walk among their dwellings? Indeed in that are signs; then do they not hear?}</value>
+  </data>
+  <data name="s27" xml:space="preserve">
+    <value>Awalam yaraw annaa nasooqul maaa’a ilal ardil juruzi fanukhriju bihee zar’an ta’kulu minhu an’aamuhum wa anfusuhum afalaa yubsiroon {Have they not seen that We drive the water [in clouds] to barren land and bring forth thereby crops from which their livestock eat and [they] themselves? Then do they not see?}</value>
+  </data>
+  <data name="s28" xml:space="preserve">
+    <value>Wa yaqooloona mataa haazal fath hu in kuntum saadiqeen {And they say, “When will be this conquest, if you should be truthful?”}</value>
+  </data>
+  <data name="s29" xml:space="preserve">
+    <value>Qul yawmal fath hi laa yanfa’ul lazeena kafarooo eemaanuhum wa laa hum yunzaroon {Say, [O Muhammad], “On the Day of Conquest the belief of those who had disbelieved will not benefit them, nor will they be reprieved.”}</value>
+  </data>
+  <data name="s3" xml:space="preserve">
+    <value>Tanzeelul Kitaabi laa raiba feehi mir rabbil ‘aalameen {This is the revelation of the Book about which there is no doubt from the Lord of the worlds}</value>
+  </data>
+  <data name="s30" xml:space="preserve">
+    <value>Fa a’rid ‘anhum wantazir innahum muntaziroon {So turn away from them and wait. Indeed, they are waiting}</value>
+  </data>
+  <data name="s31" xml:space="preserve">
+    <value>Thumma sawwaahu wa nafakha feehi mir roohihih; wa ja’ala lakumus sam’a wal-absaara wal-af’idah; qaleelam maa tashkuroon {Then He proportioned him and breathed into him from His [created] soul and made for you hearing and vision and hearts; little are you grateful}</value>
+  </data>
+  <data name="s4" xml:space="preserve">
+    <value>Am yaqooloonaf taraahu bal huwal haqqu mir rabbika litunzira qawma maaa ataahum min nazeerim min qablika la’allahum yahtadoon {Or do they say, “He invented it”? Rather, it is the truth from your Lord, [O Muhammad], that you may warn a people to whom no warner has come before you [so] perhaps they will be guided}</value>
+  </data>
+  <data name="s5" xml:space="preserve">
+    <value>Allaahul lazee khalaqas samaawaati wal arda wa maa bainahumaa fee sittati ayyaamin thummas tawaa ‘alal ‘arsh; maa lakum min doonihee minw-waliyyinw-wala shafee’; afalaa tatazakkaroon {It is Allah who created the heavens and the earth and whatever is between them in six days; then He established Himself above the Throne. You have not besides Him any protector or any intercessor; so will you not be reminded?}</value>
+  </data>
+  <data name="s6" xml:space="preserve">
+    <value>Yudabbirul amra minas samaaa’i ilal ardi thumma ya’ruju ilaihi fee yawmin kaana miqdaaruhooo alfa sanatim mimmaa ta’uddoon {He arranges [each] matter from the heaven to the earth; then it will ascend to Him in a Day, the extent of which is a thousand years of those which you count}</value>
+  </data>
+  <data name="s7" xml:space="preserve">
+    <value>Zaalika ‘aalimul ghaybi wa shahaadatil ‘azeezur raheem {That is the Knower of the unseen and the witnessed, the Exalted in Might, the Merciful,}</value>
+  </data>
+  <data name="s8" xml:space="preserve">
+    <value>Allazee ahsana kulla shai in khalaqa; wa bada a khalqal insaani min teen {Who perfected everything which He created and began the creation of man from clay}</value>
+  </data>
+  <data name="s9" xml:space="preserve">
+    <value>Thumma ja’ala naslahoo min sulaalatim mim maaa’immaheen {Then He made his posterity out of the extract of a liquid disdained}</value>
+  </data>
+</root>

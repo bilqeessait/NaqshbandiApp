@@ -1,0 +1,213 @@
+﻿@page "/sunnahsalaah2"
+@using System.Globalization
+@inject IStringLocalizer<SunnahSalaah2> Loc
+@inject NavigationManager NavigationManager
+
+<h4>@Loc["2 Rakats of Sunnah Salaah"]</h4>
+
+
+<h6>@Loc["s0"]</h6>
+
+<p>
+    @Loc["s1"]
+</p>
+<p>
+    @Loc["s2"]
+    <br />
+    <img src="/images/salah1.jpg" style="width:auto;height:150px" /> <br />
+</p>
+
+<br />
+
+<p>
+    @Loc["s3"]
+</p>
+<p>
+    @Loc["s4"]
+    <br />
+    <img src="/images/salah2.jpg" style="width:auto;height:150px" /> <br />
+</p>
+
+<br />
+
+<p>
+    @Loc["s5"]
+    <br />
+    <img src="/images/salah3.jpg" style="width:auto;height:150px" /> <br />
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+        سُبْحانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلاَ إِلَهَ غَيْرُكَ
+    </font>
+</p>
+<p>
+    @Loc["s6"]
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+        بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ
+    </font>
+</p>
+<p>
+    @Loc["s7"]
+</p>
+
+<br />
+
+<p>
+    @Loc["s8"]
+</p>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-sm" style="height:150px;vertical-align:middle;z-index:10">
+        <tr>
+            <td align="center"><div @onclick="NavigateToSF"><img src="/images/book.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["surahfatiha"]</font></div></td>
+
+        </tr>
+    </table>
+</div>
+@code {
+    private void NavigateToSF() { NavigationManager.NavigateTo("surahfatiha"); }
+}
+
+<br />
+
+<p>
+    @Loc["s9"]
+    <br />
+    <img src="/images/salah4.jpg" style="width:auto;height:150px" /> <br />
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+        سُبْحَانَ رَبِّيَ الْعَظِيمِ
+    </font>
+</p>
+<p>
+    @Loc["s10"]
+</p>
+
+<br />
+
+<p>
+    @Loc["s11"]
+    <br />
+    <img src="/images/salah5.jpg" style="width:auto;height:150px" /> <br />
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+        سَمِعَ اللَّهُ لِمَنْ حَمِدَه
+    </font>
+</p>
+<p>
+    @Loc["s12"]
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+        رَبَّنَا وَلَكَ الْحَمْد
+    </font>
+</p>
+<p>
+    @Loc["s13"]
+</p>
+
+<br />
+
+<p>
+    @Loc["s14"]
+    <br />
+    <img src="/images/salah6.jpg" style="width:auto;height:150px" /> <br />
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+        سُبْحَانَ رَبِّيَ الأَعْلَى
+    </font>
+</p>
+<p>
+    @Loc["s15"]
+</p>
+
+<br />
+
+<p>
+    @Loc["s16"]
+    <br />
+    <img src="/images/salah7.jpg" style="width:auto;height:150px" /> <br />
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+        رب اغفر لي
+    </font>
+</p>
+<p>
+    @Loc["s17"]
+</p>
+<p>
+    @Loc["s18"]
+</p>
+
+<br />
+
+<p>
+    <strong>@Loc["s19"]</strong>
+</p>
+
+<br />
+
+<p>
+    @Loc["s20"]
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+        التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، السَّلاَمُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلاَمُ عَلَيْنَا
+        وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ
+    </font>
+</p>
+<p>
+    @Loc["s21"]
+</p>
+<p>
+    @Loc["s22"]
+    <br />
+    <img src="/images/salah8.jpg" style="width:auto;height:150px" /> <br />
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+        أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ
+    </font>
+</p>
+<p>
+    @Loc["s23"]
+</p>
+
+<br />
+
+
+<p>
+    @Loc["s25"]
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+        ٱللَّٰهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ ٱللَّٰهُمَّ بَارِكْ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ
+    </font>
+</p>
+<p>
+    @Loc["s26"]
+</p>
+
+<br />
+
+<p>
+    @Loc["s27"]
+    <br />
+    <img src="/images/salah9.jpg" style="width:auto;height:150px" /> <br />
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+        السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ
+    </font>
+</p>
+<p>
+    @Loc["s28"]
+</p>
+
+

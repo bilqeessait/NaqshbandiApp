@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Greeting" xml:space="preserve">
+    <value>Assalaamu Alaykum, unjani?</value>
+  </data>
+  <data name="s0" xml:space="preserve">
+    <value>ISalah yaseTahajjud</value>
+  </data>
+  <data name="s1" xml:space="preserve">
+    <value>(i) Ibandakanya ezimbini ukuya kulo naliphi na inani leerakah. Elona xesha lilungileyo lokwenza le salah kukwisiqingatha sesithathu sokugqibela sobusuku, kwaye wenze iSalah yaseWitr emva koko.</value>
+  </data>
+  <data name="s10" xml:space="preserve">
+    <value>(ii) I-niyyah ye-Salah ye-Tahajjud ihamba ngolu hlobo lulandelayo:</value>
+  </data>
+  <data name="s11" xml:space="preserve">
+    <value>Bismilla hirahma nirrahim Nawaitu usalli rak'atini sunnata salatit-tahajjud lillahi ta-ala {Egameni lika-Allah, uSozinceba, uSozinceba. Ndizimisele ukuthandaza (imijikelo) emibini yomthandazo weTahajjud ngenxa ka-Allh Osenyangweni.}</value>
+  </data>
+  <data name="s12" xml:space="preserve">
+    <value>(iii) Cengceleza kwirak’ah nganye iFatiha kunye nayo nayiphi na iSurah okanye iivesi zeKur’an.</value>
+  </data>
+  <data name="s13" xml:space="preserve">
+    <value>(iv) Yenza le dua ilandelayo emva koko:</value>
+  </data>
+  <data name="s14" xml:space="preserve">
+    <value>Allahumma lakal-hamdu, anta qaiyyumus-samawati wal ardi wa man fi hinna. Wa lakal-hamdu anta malikus-samawati wal ardi wa man fi hinna. Wa lakal-hamdu anta nurus-samawati wal ardi wa man fi hinna. Wa lakal hamdu antal-haq, wa wa'duka haq, wa li-qa-uka haq, wa qauluka haq, wal-jannatu haq, wan-naru haq, wan-nabiyyuna haq, wa Muhammad, sallallahu alaihi wa sallama haq, was-sa’atu haq. Allahumma laka aslamtu, wa bika amantu, wa alaika tawakkaltu, wa ilaika anabtu, wa bika khasamtu, wa ilaika hakamtu. Faghfirli ma qaddamtu wa ma akh-khartu, wa ma asrartu, wa ma a'lantu, wa ma anta a'lamu bihi minni. Antal-muqaddimu wa antal-mu-akh-khir. Lailaha- illa anta, wa la haula wa la quwwata illa billah.</value>
+  </data>
+  <data name="s15" xml:space="preserve">
+    <value>{Egameni lika-Allh, uSozinceba, uSozinceba. Owu Allah! Lonke ukubonga ngakuWe. Wena unguMlondolozi wamazulu nomhlaba nako konke okukuwo. Lonke ukubonga ngakuWe. Wena unguMlawuli wamazulu nomhlaba nako konke okukuwo. Lonke ukubonga ngakuWe. UluKhanya lwamazulu nomhlaba nako konke okukuwo. Lonke ukubonga ngakuWe. Wena uyiNyaniso, idinga lakho liyinyaniso, ukuhlangana nawe yinyaniso, amazwi akho ayinyaniso, iJannah yinyaniso, uMlilo yinyaniso, abaProfeti bayinyaniso, uMuhammad (uxolo nentsikelelo). ka-Allh makabe phezu kwakhe) yinyaniso, iyure iyinyaniso. Owu Allah! Ndiyazithoba kuWe, Ndiyakholwa kuwe, Ndithembele kuWe, Kuwe ukubuya kwam, Ndimoyisa kuwe umchasi wam ngengxabano, Ndibheke kuwe ukuba ndigwebe. Ndixoleleni ngezinto endizenzileyo ngaphambili, nendiza kuzenza kwixesha elizayo, endizifihlayo nendizityhilayo; kwaye konke oku ukwazi bhetele kunam. Wena unguLowo wenza inkqubela yaye unguLowo ulibazisa. Akukho Thixo wumbi ngaphandle kwakho. Kwaye akukho mandla namandla ngaphandle koAllh.}</value>
+  </data>
+  <data name="s2" xml:space="preserve">
+    <value>(ii) Phambi kwe-niyyah, yithi ngalinye kula maxesha ali-10 alandelayo:</value>
+  </data>
+  <data name="s3" xml:space="preserve">
+    <value>Allahu akbar {uAllh ngoyena mkhulu.}</value>
+  </data>
+  <data name="s4" xml:space="preserve">
+    <value>Alhamdu lillah {Yonke indumiso mayibe kuAllâh.}</value>
+  </data>
+  <data name="s5" xml:space="preserve">
+    <value>Subhanallahi wa bihamdih {UAllâh Ukhululekile kuko konke ukungafezeki, kwaye yonke indumiso iya kuYe.}</value>
+  </data>
+  <data name="s6" xml:space="preserve">
+    <value>Subhanal quddus {Ikhululekile kuko konke ukungafezeki yiNgcwele kaNgcwele.}</value>
+  </data>
+  <data name="s7" xml:space="preserve">
+    <value>Astaghfirullah {Ndicela uxolo kuAllh.}</value>
+  </data>
+  <data name="s8" xml:space="preserve">
+    <value>La ilaha illallah {Akukho thixo wumbi ngaphandle koAllh.}</value>
+  </data>
+  <data name="s9" xml:space="preserve">
+    <value>Allahumma inni a’udhu bika min diqid dunya wa diqi yaumil qiyamati {O Allah! Ndifuna ukhuseleko lwaKho kumnyanzelo weli hlabathi nakuMnyanzelo weLizayo.}</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>IiSalaah ezikhethekileyo</value>
+  </data>
+</root>

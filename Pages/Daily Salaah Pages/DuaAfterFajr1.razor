@@ -1,0 +1,438 @@
+﻿@page "/duaafterfajr1"
+@using System.Globalization
+@inject IStringLocalizer<DuaAfterFajr1> Loc
+@inject NavigationManager NavigationManager
+
+<h4>@Loc["Duas After Salaah"]</h4>
+
+
+<h6>@Loc["s0"]</h6>
+
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+        لاَ إِلٰهَ إِلاَّ اللهُ وَحْدَهُ لآ شَرِيْكَ لَهُ * لَهُ الْمُلْكُ وَ لَهُ الْحَمْدُ * يُحْيِى وَ يُمِيْتُ * وَ هُوَ  عَلٰى كُلِّ شَيْءٍ قَدِيْر. (10 مرات)
+
+        سَمِعْنَا وَ أَطَعْنَا غُفْرَانَكَ رَبَّنَا وَ إِلَيْكَ الْمَصِيْرُ.
+    </font>
+</p>
+<p>
+    @Loc["s3"]
+
+</p>
+<p>
+    @Loc["t3"]
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+
+
+        عَلٰى رَسُوْلِنَا صَلَوَاتٌ * أَسْتَغْفِرُ اللهَ * أَسْتَغْفِرُ اللهَ * أَسْتَغْفِرُ اللهَ * سُبْحَانَ اللهِ * وَ الْحَمْدُ لِلّٰهِ * وَ لاَ إِلٰهَ إلاَّ اللهُ * وَ اللهُ أَكْبَرُ * وَ لاَ حَوْلَ وَ لاَ قُوَّةَ إِلاَّ بِاللهِ الْعَلِىِّ الْعَظِيْمِ.
+    </font>
+</p>
+<p>
+    @Loc["s4"]
+
+</p>
+<p>
+    @Loc["t4"]
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+
+
+        أَعُوْذُ بِاللهِ مِنَ الشَّيْطَانِ الرَّجِيْمِ * بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ * وَ إلٰهُكُمْ إِلٰهٌ وَّاحِدٌ لاَ إِلٰهَ إِلاَّ هُوَ الرَّحْمٰنُ الرَّحِيْمُ.
+    </font>
+</p>
+<p>
+    @Loc["s5"]
+
+</p>
+<p>
+    @Loc["t5"]
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+        
+
+        اَللهُ لَآ إِلٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّوْمُ * لاَ تَأْخُذُهُ سِنَةٌ وَّ لاَ نَوْمٌ * لَهٗ مَا فِى السَّمٰوٰتِ وَ مَا فِى الأَرْضِ * مَنْ ذَا الَّذِى يَشْفَعُ عِنْدَهٗۤ إِلاَّ بِإِذْنِهٖ * يَعْلَمُ مَا بَيْنَ أَيْدِيْهِمْ وَ مَا خَلْفَهُمْ  ج وَ لاَ يُحِيْطُوْنَ بِشَيءٍ مِّنْ عِلْمِهٖۤ إِلاَّ بِمَا شَآءَ ج وَسِعَ كُرْسِيُّهُ السَّمٰوٰتِ وَ الأَرْضَ  ج وَلاَيَؤُدُهٗ حِفْظُهُمَا  ج وَ هُوَ الْعَلِيُّ الْعَظِيْمُ  ج صَدَقَ اللهُ الْعَظِيْمُ
+    </font>
+</p>
+<p>
+    @Loc["s6"]
+
+</p>
+<p>
+    @Loc["t6"]
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+
+
+        شَهِدَ اللهُ أَنَّهُ لاَ إِلٰهَ إِلاَّ هُوَ وَ الْمَلاَئِكَةُ وَ أُولُو الْعِلْمِ قَائِمًا بِالْقِسْطِ لاَ إِلٰهَ إِلاَّ هُوَ الْعَزِيْزُ الْحَكِيْمُ * إِنَّ الدِّيْنَ عِنْدَ اللهِ الإِسْلاَمُ.
+    </font>
+</p>
+<p>
+    @Loc["s7"]
+
+</p>
+<p>
+    @Loc["t7"]
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+
+
+        قُلِ اللّٰهُمَّ مَالِكَ الْمُلْكِ تُؤْتِى الْمُلْكَ مَنْ تَشَآءُ وَ تَنْزِعُ الْمُلْكَ مِمَّنْ تَشَآءُ * وَ تُعِزُّ مَنْ تَشَآءُ وَ تُذِلُّ مَنْ تَشَآءُ * بِيَدِكَ الْخَيْرُ * إِنَّكَ  عَلٰى كُلِّ شَيْءٍ قَدِيْرٌ * تُوْلِجُ الَّيْلَ فِى النَّهَارِ وَ تُوْلِجُ النَّهَارَ فِى الَّيْلِ وَ تُخْرِجُ الْحَيَّ مِنَ الْمَيِّتِ وَ تُخْرِجُ الْمَيِّتَ مِنَ الْحَيِّ * وَ تَرْزُقُ مَنْ تَشَآءُ بِغَيْرِ حِسَابٍ.
+    </font>
+</p>
+<p>
+    @Loc["s8"]
+
+</p>
+<p>
+    @Loc["t8"]
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+
+
+        اَللّٰهُمَّ لاَ مَانِعَ لِمَا أَعْطَيْتَ وَ لاَ مُعْطِيَ لِمَا مَنَعْتَ وَ لاَ رَادَّ لِمَا قَضَيْتَ وَ لاَ يَنْفَعُ ذَا الْجَدِّ مِنْكَ الْجَدِّ * رَبِّى لاَ حَوْلَ وَ لاَ قُوَّةَ إِلاَّ بِاللهِ الْعَلِيِّ الْعَظِيْمِ * الفَاتِحَةُ.
+    </font>
+</p>
+<p>
+    @Loc["s9"]
+
+</p>
+<p>
+    @Loc["t9"]
+</p>
+<div class="table-responsive">
+    <table class="table table-bordered table-sm" style="height:150px;vertical-align:middle;z-index:10">
+
+        <tr>
+            <td align="center"><div @onclick="NavigateToSS"><img src="/images/book.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["surahsincerity"]</font></div></td>
+        </tr>
+        <tr>
+            <td align="center"><div @onclick="NavigateToSD"><img src="/images/book.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["surahdaybreak"]</font></div></td>
+        </tr>
+        <tr>
+            <td align="center"><div @onclick="NavigateToSM"><img src="/images/book.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["surahmen"]</font></div></td>
+
+        </tr>
+
+    </table>
+</div>
+@code {
+    private void NavigateToSD() { NavigationManager.NavigateTo("surahdaybreak"); }
+    private void NavigateToSM() { NavigationManager.NavigateTo("surahmen"); }
+    private void NavigateToSS() { NavigationManager.NavigateTo("surahsincerity"); }
+}
+
+<br />
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+
+
+        سُبْحَانَكَ يَا عَظِيْمُ * سُبْحَانَ اللهِ.
+
+        سُبْحَانَ اللهِ (33 مرات).
+
+        عَلٰى نِعْمَةِ الإِسْلاَمِ وَ شَرَفِ الإِيْمَانِ دَائِمًا * اَلْحَمْدُ لِلّٰهِ.
+
+        اَلْحَمْدُ لِلّٰهِ (33 مرات).
+
+        تَعَالَى شَأْنُهُ وَ لاَ إِلٰهَ غَيْرُهُ * اَللهُ أَكْبَرُ.
+
+        اَللهُ أَكْبَرُ (33 مرات).
+    </font>
+</p>
+<p>
+    @Loc["s10"]
+
+</p>
+<p>
+    @Loc["t10"]
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+
+
+        لاَ إِلٰهَ إِلاَّ اللهُ وَحْدَهُ لآ شَرِيْكَ لَهُ * لَهُ الْمُلْكُ وَ لَهُ الْحَمْدُ * يُحْيِى وَ يُمِيْتُ * وَ هُوَ حَيٌّ دَائِمٌ لاَ يَمُوْتُ بِيَدِهِ الْخَيْرُ وَ هُوَ عَلٰى كُلِّ شَيْءٍ قَدِيْرٌ.
+    </font>
+</p>
+<p>
+    @Loc["s11"]
+
+</p>
+<p>
+    @Loc["t11"]
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+        أَعُوْذُ بِاللهِ مِنَ الشَّيْطَانِ الرَّجِيْم
+
+    </font>
+</p>
+<p>
+    @Loc["s12"]
+
+</p>
+<p>
+    @Loc["t12"]
+</p>
+
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+
+
+        إِنَّ اللهَ وَ مَلآئِكَتَهُ يُصَلُّوْنَ عَلٰى النَّبِيِّ * يَا أَيُّهَا الَّذِيْنَ اٰمَنُوْا صَلُّوْا عَلَيْهِ وَ سَلِّمُوْا تَسْلِيْمًا.
+    </font>
+</p>
+<p>
+    @Loc["s13"]
+
+</p>
+<p>
+    @Loc["t13"]
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+
+
+        اَللّٰهُمَّ صَلِّ عَلٰى سَيِّدِنَا مُحَمَّدٍ وَعَلٰى آلِ سَيِّدِنَا مُحَمَّدٍ بِعَدَدِ كُلِّ دَاءٍ وَ دَوَاءٍ وَ بَارِكْ وَ سَلِّمْ عَلَيْهِ وَ عَلَيْهِمْ كَثِيْرًا (2 مرات)
+
+        اَللّٰهُمَّ صَلِّ عَلٰى سَيِّدِنَا مُحَمَّدٍ وَعَلٰى آلِ سَيِّدِنَا مُحَمَّدٍ بِعَدَدِ كُلِّ  دَاءٍ وَ دَوَاءٍ وَ بَارِكْ وَ سَلِّمْ عَلَيْهِ وَ عَلَيْهِمْ كَثِيْرًا كَثِيْرًا.
+    </font>
+</p>
+<p>
+    @Loc["s14"]
+
+</p>
+<p>
+    @Loc["t14"]
+</p>
+
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+
+
+        فَاعْلَمْ أَنَّهُ لاَ إِلٰهَ إِلاَّ اللهُ :
+    </font>
+</p>
+<p>
+    @Loc["s15"]
+
+</p>
+<p>
+    @Loc["t15"]
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+
+
+        لاَ إِلٰهَ إِلاَّ اللهُ
+    </font>
+</p>
+<p>
+    @Loc["s16"]
+
+</p>
+<p>
+    @Loc["t16"]
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+        مُحَمَّدٌ رَّسُوْلُ اللهِ (ﷺ).
+
+
+    </font>
+</p>
+<p>
+    @Loc["s17"]
+
+</p>
+<p>
+    @Loc["t17"]
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+
+
+        اَللّٰهُمَّ صَلِّ عَلٰى مُحَمَّدٍ وَ عَلٰى آلِ مُحَمَّدٍ وَ سَلِّمْ (10 مرات).
+    </font>
+</p>
+<p>
+    @Loc["s18"]
+
+</p>
+<p>
+    @Loc["t18"]
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+
+
+        صَلِّ يَا رَبِّى وَ سَلِّمْ عَلٰى جَمِيْعِ الأَنْبِيَاءِ وَ الْمُرْسَلِيْنَ * وَ آلِ الْكُلِّ أَجْمَعِيْنَ * وَ الْحَمْدُ لِلّٰهِ رَبِّ الْعَالَمِيْنَ * عَلٰى أَشْرَفِ الْعَالَمِيْنَ سَيِّدِنَا مُحَمَّدَ نِ الصَّلَوَاتُ (ﷺ) * عَلٰى أَفْضَلِ الْعَالَمِيْنَ سَيِّدِنَا مُحَمَّدَ نِ الصَّلَوَاتُ (ﷺ) * عَلٰى أَكْمَلِ الْعَالَمِيْنَ سَيِّدِنَا مُحَمَّدَ نِ الصَّلَوَاتُ (ﷺ) * صَلَوَاتُ اللهِ تَعَالَى وَ مَلاَئِكَتِهِ وَ أَنْبِيَائِهِ وَ رُسُلِهِ وَ جَمِيْعِ خَلْقِهِ عَلٰى مُحَمَّدٍ وَ عَلٰى آلِ مُحَمَّدٍ * عَلَيْهِ وَ عَلَيْهِمُ السَّلاَمُ * وَ رَحْمَةُ اللهِ تَعَالَى وَ بَرَكَاتُهُ * وَ رَضِيَ اللهُ تَبَارَكَ وَ تَعَالَى عَنْ سَادَاتِنَا أَصْحَابِ رَسُوْلِ اللهِ أَجْمَعِيْنَ * وَ عَنِ التَّابِعِيْنَ بِهِمْ بِإِحْسَانٍ * وَ عَنِ الأَئِمَّةِ الْمُجْتَهِدِيْنَ الْمَاضِيْنَ * وَ عَنِ الْعُلَمَاءِ المُتَّقِيْنَ وَ عَنِ الأَوْلِيَاءِ الصَّالِحِيْنَ * وَ عَنْ مَشَايِخِنَا فَى الطَّرِيْقَةِ النَّقْشَبَنْدِيَّةِ الْعَالِيَةِ * قَدَّسَ اللهُ تَعَالَى أَرْوَاحَهُمُ الزَّكِيَّةِ * وَ نَوَّرَ اللهُ تَعَالَى أَضْرِحَتَهُمُ الْمُبَارَكَةِ * وَ أَعَادَ اللهُ تَعَالَى عَلَيْنَا مِنْ بَرَكَاتِهِمْ وَ فُيُوْضَاتِهِمْ دَائِمًا وَ الحَمْدُ لِلّٰهِ رَبِّ الْعَالَمِيْنَ * الفَاتِحَةُ.
+    </font>
+</p>
+<p>
+    @Loc["s19"]
+
+</p>
+<p>
+    @Loc["t19"]
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+        سُبْحَانَ رَبِّيِ الْعَلِيِّ الأَعْلَى الْوَهَّابِ.
+
+
+    </font>
+</p>
+<p>
+    @Loc["s20"]
+
+</p>
+<p>
+    @Loc["t20"]
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+
+
+        هُوَ اَللهُ الَّذِى لَآ إِلٰهَ إِلاَّ هُوَعَالِمُ الْغَيْبِ وَ الشَّهَادَةِ * هُوَ الرَّحْمٰنُ الرَّحِيْمُ * هُوَ اللهُ الَّذِى لَآ إِلٰهَ إِلاَّ هُوَاَلْمَلِكُ الْقُدُّوْسُ السَّلاَمُ الْمُؤْمِنُ الْمُهَيْمِنُ الْعَزِيْزُ الْجَبَّارُ الْمُتكَبِّرُ * سُبْحَانَ اللهِ عَمَّا يُشْرِكُوْنَ * هُوَ اللهُ الْخَالِقُ الْبَارِئُ الْمُصَوِّرُ لَهُ الْاَ سْمَاءُ الْحُسْنٰى * يُسَبِّحُ لَهُ مَا فِى السَّمٰوٰتِ وَ اْلأَرْضِ * وَ هُوَ الْعَزِيْزُ الْحَكِيْمُ.
+    </font>
+</p>
+<p>
+    @Loc["s21"]
+
+</p>
+<p>
+    @Loc["t21"]
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+
+
+        هُوَ اْلأَوَّلُ وَ الْأَخِرُ وَ الظَّاهِرُ وَ الْبَاطِنُ * وَ هُوَ بِكُلِّ شَيْءٍ عَلِيْمٌ * صَدَقَ اللهُ الْعَظِيْمُ.
+    </font>
+</p>
+<p>
+    @Loc["s22"]
+
+</p>
+<p>
+    @Loc["t22"]
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+
+
+        اَللّٰهُمَّ صَلِّ عَلٰى مُحَمَّدٍ وَ عَلٰى آلِ مُحَمَّدٍ وَ سَلِّمْ (10 مرات).
+    </font>
+</p>
+<p>
+    @Loc["s23"]
+
+</p>
+<p>
+    @Loc["t23"]
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+
+
+        اَللّٰهُمَّ صَلِّ عَلٰى مُحَمَّدٍ وَ عَلٰى آلِ مُحَمَّدٍ وَ سَلِّمْ (10 مرات).
+    </font>
+</p>
+<p>
+    @Loc["s24"]
+
+</p>
+<p>
+    @Loc["t24"]
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+
+
+        اَللّٰهُمَّ صَلِّ عَلٰى مُحَمَّدٍ وَ عَلٰى آلِ مُحَمَّدٍ وَ سَلِّمْ (10 مرات).
+    </font>
+</p>
+<p>
+    @Loc["s25"]
+
+</p>
+<p>
+    @Loc["t25"]
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+
+
+        اَللّٰهُمَّ صَلِّ عَلٰى مُحَمَّدٍ وَ عَلٰى آلِ مُحَمَّدٍ وَ سَلِّمْ (10 مرات).
+    </font>
+</p>
+<p>
+    @Loc["s26"]
+
+</p>
+<p>
+    @Loc["t26"]
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+
+
+        اَللّٰهُمَّ صَلِّ عَلٰى مُحَمَّدٍ وَ عَلٰى آلِ مُحَمَّدٍ وَ سَلِّمْ (10 مرات).
+    </font>
+</p>
+<p>
+    @Loc["s27"]
+
+</p>
+<p>
+    @Loc["t27"]
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+
+
+        اَللّٰهُمَّ صَلِّ عَلٰى مُحَمَّدٍ وَ عَلٰى آلِ مُحَمَّدٍ وَ سَلِّمْ (10 مرات).
+    </font>
+</p>
+<p>
+    @Loc["s28"]
+
+</p>
+<p>
+    @Loc["t28"]
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+
+
+        اَللّٰهُمَّ صَلِّ عَلٰى مُحَمَّدٍ وَ عَلٰى آلِ مُحَمَّدٍ وَ سَلِّمْ (10 مرات).
+    </font>
+</p>
+<p>
+    @Loc["s29"]
+
+</p>
+<p>
+    @Loc["t29"]
+</p>
+<p style="text-align:right">
+    <font style="font-family: Conv_original-hafs;font-size:2.2em;text-align:justify;">
+
+
+        اَللّٰهُمَّ صَلِّ عَلٰى مُحَمَّدٍ وَ عَلٰى آلِ مُحَمَّدٍ وَ سَلِّمْ (10 مرات).
+    </font>
+</p>
+<p>
+    @Loc["s30"]
+
+</p>
+<p>
+    @Loc["t30"]
+</p>

@@ -1,0 +1,25 @@
+﻿@page "/specialsalaah"
+@inject NavigationManager NavigationManager
+@using System.Globalization
+@inject IStringLocalizer<SpecialSalaah> Loc
+
+<PageTitle>Naqshbandi App</PageTitle>
+
+<h2>Naqshbandi App</h2>
+
+@Loc["Special Salaahs"]
+
+<div class="table-responsive">
+    <table class="table table-bordered table-sm" style="height:240px;vertical-align:middle;z-index:10">
+
+        <tr>
+            <td align="center"><div @onclick="NavigateToTJS"><img src="/images/salaah.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["tahajjudsalaah"]</font></div></td>
+        </tr>
+
+    </table>
+</div>
+@code {
+
+    private void NavigateToTJS() { NavigationManager.NavigateTo("tahajjudsalaah"); }
+
+}

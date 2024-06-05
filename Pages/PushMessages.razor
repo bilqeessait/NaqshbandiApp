@@ -1,0 +1,302 @@
+﻿@page "/pushmessages"
+@inject IJSRuntime JS;
+@inject HttpClient Http;
+@implements IAsyncDisposable
+
+<h3>Push Messaging Demo - Registration</h3>
+<hr style="color:grey">
+<div class="alert-danger">@NetworkNotAvailable</div>
+<div class="alert-success">@NetworkAvailable</div>
+<br />
+<div class="table-responsive">
+    <div class="table table-bordered table-sm" style="vertical-align:middle;z-index:10;border-color:white;">
+        <div id="token_div" style="display: none;">
+            <b>Your Registration Token</b>
+            <p id="token" style="word-break: break-all;"></p>
+        </div>
+        <div id="permission_div" style="display: flex;">
+            Permission required to receive messages
+            <p id="token"></p>
+            <br>
+            <button style="background-color: #585858;border-radius: 4px;color: white;margin: 4px 4px;padding: 10px;font-size: 18px;width:98%;border-color:white" onclick="requestPermission()">
+                Request Permission
+            </button>
+        </div>
+    </div>
+</div>
+
+<hr style="color:grey">
+
+<div class="table-responsive">
+    <div class="table table-bordered table-sm" style="vertical-align:middle;z-index:10;border-color:white;">
+        <div id="profile_div" style="display: none;">
+            <b>Register Your Notification Profile(s)</b>
+            <br>
+            <br>
+    <EditForm Model="@PushCat" OnValidSubmit=@ValidFormSubmitted>
+            @foreach (var option in PushCat.Options)
+                {
+                    <div style="padding-left:50px">
+                        <label>
+                            <InputCheckbox id="pushTags" @bind-Value="option.Value" checked="option.Value" />
+                            @option.Name
+                        </label>
+                    </div>
+                }
+                <br>
+                <input type="submit" style="background-color: #585858;border-radius: 4px;color: white;margin: 4px 4px;padding: 10px;font-size: 18px;width:98%;border-color:white" value="Register Profiles" />
+            </EditForm>
+            <br>
+            <div class="alert-danger">@FormValidation</div>
+            <div class="alert-danger">@serverResult</div>
+            <hr style="color:grey">
+            <input type="hidden" id="pushTagList" value="@PushTags">
+            <input type="hidden" id="pushTagNameList" value="@PushTagNames">
+        </div>
+    </div>
+</div>
+
+<hr style="color:grey">
+
+
+@code
+{
+    string PushTagNames = "";
+    string LocalPushTokenValue = "placeholder";
+    string LocalPushProfileValue = "";
+
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        PushTagNames = "";
+        foreach (Option x in PushCat.Options)
+        {
+            PushTagNames += "," + x.Name.ToString();
+        }
+        if (PushTagNames != "") PushTagNames = PushTagNames.Substring(1);
+
+        JS.InvokeVoidAsync("resetUI");
+
+    }
+
+    public class PushCategory
+    {
+        public List<Option> Options { get; set; }
+    }
+
+    public class Option
+    {
+        public string Name { get; set; }
+
+        public bool Value { get; set; }
+    }
+
+    private PushCategory PushCat = new()
+        {
+            Options = new List<Option>
+    {
+            new()
+            {
+                Name = "Turkey",
+                Value = false,
+            },
+            new()
+            {
+                Name = "South-Africa",
+                Value = false,
+            },
+            new()
+            {
+                Name = "Other",
+                Value = false,
+            }
+            },
+        };
+
+
+    string FormValidation = "";
+    string PushTags = "";
+    string serverResult = "";
+
+    void ValidFormSubmitted(EditContext editContext)
+    {
+
+        bool isValid = false;
+
+        if (!IsOnline)
+        {
+            FormValidation = "You are currently Offline, please try again when you are back online";
+        }
+        else
+        {
+
+
+                PushTags = "";
+                PushTagNames = "";
+                foreach (Option x in PushCat.Options)
+                {
+                    if (x.Value)
+                    {
+                        isValid = true;
+                        PushTags += "," + x.Name.ToString();
+                    }
+                    PushTagNames += "," + x.Name.ToString();
+                }
+                if (PushTags != "") PushTags = PushTags.Substring(1);
+                if (PushTagNames != "") PushTagNames = PushTagNames.Substring(1);
+
+                if (!isValid)
+                {
+                    FormValidation = "At least one choice is required.";
+                }
+                else
+                {
+                    //Console.WriteLine("PushTags: " + PushTags);
+                    FormValidation = "";
+                    var serverResultTmp = registerPush();
+                    LocalPushProfileValue = PushTags;
+                    SetPushProfileDefaults();
+                }
+            
+
+        }
+    }
+
+    //Timer to wait for Send API response
+    private static System.Timers.Timer aTimer;
+    private int counter = 10;
+    public void StartTimer()
+    {
+        aTimer = new System.Timers.Timer(1000);
+        aTimer.Elapsed += CountDownTimer;
+        aTimer.Enabled = true;
+    }
+
+    public void CountDownTimer(Object source, System.Timers.ElapsedEventArgs e)
+    {
+        if (counter > 0 && serverResult == "Please wait ...")
+        {
+            counter -= 1;
+        }
+        else
+        {
+            aTimer.Enabled = false;
+            aTimer.Dispose();
+        }
+        InvokeAsync(StateHasChanged);
+        if (counter == 0)
+        {
+            serverResult = "Send Failed";
+        }
+    }
+
+    public async Task<string> registerPush()
+    {
+        var apiRegister = "https://af-es365-notificationhubpoc.azurewebsites.net/api/RegisterClient?code=6M94vf2DweIF2W3_WrQgb7HRsj4rLa7z4xznWU5drn-kAzFu5KFT6A==&pnshandle=";
+        apiRegister += LocalPushTokenValue + "&tag=" + PushTags + "&installid=" + Guid.NewGuid().ToString();
+        //Console.WriteLine("apiSend:" + apiRegister);
+
+        var httpClient = new HttpClient();
+        try
+        {
+            serverResult = "Please wait ...";
+            var result = await httpClient.GetStringAsync(apiRegister);
+            serverResult = result.ToString();
+            httpClient.Dispose();
+            StartTimer();
+            await setPushProfileLocalStorage();
+        }
+        catch (Exception ex)
+        {
+            serverResult = "Error " + ex.ToString();
+            httpClient.Dispose();
+        }
+        return serverResult;
+
+        //return FormValidation;
+    }
+
+
+
+    //Online check
+    string NetworkAvailable = "";
+    string NetworkNotAvailable = "";
+
+    [Parameter]
+    public RenderFragment Online { get; set; }
+
+    [Parameter]
+    public RenderFragment Offline { get; set; }
+
+    public bool IsOnline { get; set; }
+
+    [JSInvokable("Connection.StatusChanged")]
+    public void OnConnectionStatusChanged(bool isOnline)
+    {
+        if (IsOnline != isOnline)
+        {
+            IsOnline = isOnline;
+        }
+
+        if (isOnline) {
+
+            NetworkNotAvailable = "";
+            FormValidation = "";
+            NetworkAvailable = "You are currently Online";
+        }
+        else
+        {
+            NetworkNotAvailable = "You are currently Offline";
+            NetworkAvailable = "";
+        }
+
+        StateHasChanged();
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+
+        await JS.InvokeVoidAsync("Connection.Initialize", DotNetObjectReference.Create(this));
+
+        LocalPushTokenValue = await JS.InvokeAsync<string>("getPushToken");
+        LocalPushProfileValue = await JS.InvokeAsync<string>("getPushProfile");
+        SetPushProfileDefaults();
+
+    }
+
+    private void SetPushProfileDefaults()
+    {
+        if (LocalPushProfileValue != "") {
+            string[] checkList = Array.Empty<string>();
+            checkList = LocalPushProfileValue.Split(",");
+
+            foreach (Option x in PushCat.Options)
+            {
+                foreach (string c in checkList)
+                {
+                    if (c == x.Name)
+                    {
+                        x.Value = true;      
+                    }
+                    }
+            }
+        }
+    
+    }
+
+
+    protected async Task setPushProfileLocalStorage()
+    {
+        await JS.InvokeVoidAsync("setPushProfile");
+
+    }
+
+
+    public async ValueTask DisposeAsync()
+    {
+        await JS.InvokeVoidAsync("Connection.Dispose");
+    }
+
+
+    }

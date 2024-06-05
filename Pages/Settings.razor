@@ -1,0 +1,10 @@
+﻿@page "/settings"
+@using System.Globalization
+@inject IStringLocalizer<Settings> Loc
+<h3>@Loc["settings"]</h3>
+@Loc["currlanguage"]: <b>@CultureInfo.CurrentUICulture.Name</b>
+<br>
+<br>
+@Loc["selectlanguage"]<br>
+<CultureSelector />
+

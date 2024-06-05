@@ -1,0 +1,41 @@
+﻿@page "/dailysalaahnav"
+@inject NavigationManager NavigationManager
+@using System.Globalization
+@inject IStringLocalizer<DailySalaahNav> Loc
+
+<PageTitle>Naqshbandi App</PageTitle>
+
+<h2>Naqshbandi App</h2>
+
+@Loc["Daily Salaahs"]
+
+<div class="table-responsive">
+    <table class="table table-bordered table-sm" style="height:240px;vertical-align:middle;z-index:10">
+        <tr>
+            <td align="center"><div @onclick="NavigateToFS"><img src="/images/tasbeeh.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["fajrsalaah"]</font></div></td>
+        </tr>
+        <tr>
+            <td align="center"><div @onclick="NavigateToTS"><img src="/images/salaah.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["thursalaah"]</font></div></td>
+        </tr>   
+       <tr>
+            <td align="center"><div @onclick="NavigateToAS"><img src="/images/tasbeeh.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["asrsalaah"]</font></div></td>
+            
+        </tr>
+        <tr>
+            <td align="center"><div @onclick="NavigateToMS"><img src="/images/salaah.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["maghribsalaah"]</font></div></td>
+        </tr>
+        <tr>
+            <td align="center"><div @onclick="NavigateToES"><img src="/images/tasbeeh.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["eshasalaah"]</font></div></td>
+            <td align="center"></td>
+        </tr>
+    </table>
+</div>
+@code {
+
+    private void NavigateToAS() { NavigationManager.NavigateTo("asrsalaah"); }
+    private void NavigateToTS() { NavigationManager.NavigateTo("thursalaah"); }
+    private void NavigateToMS() { NavigationManager.NavigateTo("maghribsalaah"); }
+    private void NavigateToES() { NavigationManager.NavigateTo("eshasalaah"); }
+    private void NavigateToFS() { NavigationManager.NavigateTo("fajrsalaah"); }
+
+}

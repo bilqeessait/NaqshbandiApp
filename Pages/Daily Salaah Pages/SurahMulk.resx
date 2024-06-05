@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="s0" xml:space="preserve">
+    <value>The Sovereignty</value>
+  </data>
+  <data name="s1" xml:space="preserve">
+    <value>Bismillah hir rahman nir raheem {In the name of Allah, the Entirely Merciful, the Especially Merciful}</value>
+  </data>
+  <data name="s10" xml:space="preserve">
+    <value>Qaaloo balaa qad jaaa’anaa nazeerun fakazzabnaa wa qulnaa maa nazzalal laahu min shai in in antum illaa fee dalaalin kabeer {They will say,” Yes, a warner had come to us, but we denied and said, ‘Allah has not sent down anything. You are not but in great error.'”}</value>
+  </data>
+  <data name="s11" xml:space="preserve">
+    <value>Wa qaaloo law kunnaa nasma’u awna’qilu maa kunnaa feee as haabis sa’eer {And they will say, “If only we had been listening or reasoning, we would not be among the companions of the Blaze.”}</value>
+  </data>
+  <data name="s12" xml:space="preserve">
+    <value>Fa’tarafoo bizambihim fasuhqal li as haabis sa’eer {And they will admit their sin, so [it is] alienation for the companions of the Blaze}</value>
+  </data>
+  <data name="s13" xml:space="preserve">
+    <value>Innal lazeena yakhshawna rabbahum bilghaibi lahum maghfiratunw wa ajrun kabeer {Indeed, those who fear their Lord unseen will have forgiveness and great reward}</value>
+  </data>
+  <data name="s14" xml:space="preserve">
+    <value>Wa asirroo qawlakum awijharoo bih; innahoo ‘aleemum bizaatis sudoor {And conceal your speech or publicize it; indeed, He is Knowing of that within the breasts}</value>
+  </data>
+  <data name="s15" xml:space="preserve">
+    <value>Alaa ya’lamu man khalaqa wa huwal lateeful khabeer {Does He who created not know, while He is the Subtle, the Acquainted?}</value>
+  </data>
+  <data name="s16" xml:space="preserve">
+    <value>Huwal lazee ja’ala lakumul arda zaloolan famshoo fee manaakibihaa wa kuloo mir rizqih; wa ilaihin nushoor {It is He who made the earth tame for you – so walk among its slopes and eat of His provision – and to Him is the resurrection}</value>
+  </data>
+  <data name="s17" xml:space="preserve">
+    <value>‘A-amintum man fissamaaa’i aiyakhsifa bi kumul arda fa izaa hiya tamoor {Do you feel secure that He who [holds authority] in the heaven would not cause the earth to swallow you and suddenly it would sway?}</value>
+  </data>
+  <data name="s18" xml:space="preserve">
+    <value>Am amintum man fissamaaa’i ai yursila ‘alaikum haasiban fasata’lamoona kaifa nazeer {Or do you feel secure that He who [holds authority] in the heaven would not send against you a storm of stones? Then you would know how [severe] was My warning}</value>
+  </data>
+  <data name="s19" xml:space="preserve">
+    <value>Wa laqad kazzabal lazeena min qablihim fakaifa kaana nakeer {And already had those before them denied, and how [terrible] was My reproach}</value>
+  </data>
+  <data name="s2" xml:space="preserve">
+    <value>Tabaarakal lazee biyadihil mulku wa huwa ‘alaa kulli shai-in qadeer {Blessed is He in whose hand is dominion, and He is over all things competent –}</value>
+  </data>
+  <data name="s20" xml:space="preserve">
+    <value>Awalam yaraw ilat tairi fawqahum saaaffaatinw wa yaqbidn; maa yumsikuhunna il’lar rahmaan; innahoo bikulli shai in baseer {Do they not see the birds above them with wings outspread and [sometimes] folded in? None holds them [aloft] except the Most Merciful. Indeed He is, of all things, Seeing}</value>
+  </data>
+  <data name="s21" xml:space="preserve">
+    <value>Amman haazal lazee huwa jundul lakum yansurukum min doonir rahmaan; inilkaafiroona illaa fee ghuroor {Or who is it that could be an army for you to aid you other than the Most Merciful? The disbelievers are not but in delusion}</value>
+  </data>
+  <data name="s22" xml:space="preserve">
+    <value>Amman haazal lazee yarzuqukum in amsaka rizqah; bal lajjoo fee ‘utuwwinw wa nufoor {Or who is it that could provide for you if He withheld His provision? But they have persisted in insolence and aversion}</value>
+  </data>
+  <data name="s23" xml:space="preserve">
+    <value>Afamai yamshee mukibban ‘alaa wajhihee ahdaaa ammany yamshee sawiyyan ‘alaa siratim mustaqeem {Then is one who walks fallen on his face better guided or one who walks erect on a straight path?}</value>
+  </data>
+  <data name="s24" xml:space="preserve">
+    <value>Qul huwal lazee ansha akum wa ja’ala lakumus sam’a wal absaara wal af’idata qaleelam maa tashkuroon {Say, “It is He who has produced you and made for you hearing and vision and hearts; little are you grateful.”}</value>
+  </data>
+  <data name="s25" xml:space="preserve">
+    <value>Qul huwal lazee zara akum fil ardi wa ilaihi tuhsharoon {Say, “It is He who has multiplied you throughout the earth, and to Him you will be gathered.”}</value>
+  </data>
+  <data name="s26" xml:space="preserve">
+    <value>Wa yaqooloona mataa haazal wa’du in kuntum saadiqeen {And they say, “When is this promise, if you should be truthful?”}</value>
+  </data>
+  <data name="s27" xml:space="preserve">
+    <value>Qul innamal ‘ilmu ‘indallaahi wa innamaaa ana nazeerum mubeen {Say, “The knowledge is only with Allah, and I am only a clear warner.”}</value>
+  </data>
+  <data name="s28" xml:space="preserve">
+    <value>Falaammaa ra-awhu zulfatan seee’at wujoohul lazeena kafaroo wa qeela haazal lazee kuntum bihee tadda’oon {But when they see it approaching, the faces of those who disbelieve will be distressed, and it will be said, “This is that for which you used to call.”}</value>
+  </data>
+  <data name="s29" xml:space="preserve">
+    <value>Qul ara’aytum in ahlaka niyal laahu wa mam ma’iya aw rahimanaa famai-yujeerul kaafireena min ‘azaabin aleem {Say, [O Muhammad], “Have you considered: whether Allah should cause my death and those with me or have mercy upon us, who can protect the disbelievers from a painful punishment?”}</value>
+  </data>
+  <data name="s3" xml:space="preserve">
+    <value>Allazee khalaqal mawta walhayaata liyabluwakum ayyukum ahsanu ‘amalaa; wa huwal ‘azeezul ghafoor {[He] who created death and life to test you [as to] which of you is best in deed – and He is the Exalted in Might, the Forgiving –}</value>
+  </data>
+  <data name="s30" xml:space="preserve">
+    <value>Qul huwar rahmaanu aamannaa bihee wa ‘alaihi tawakkalnaa fasata’lamoona man huwa fee dalaalim mubeen {Say, “He is the Most Merciful; we have believed in Him, and upon Him we have relied. And you will [come to] know who it is that is in clear error.”}</value>
+  </data>
+  <data name="s31" xml:space="preserve">
+    <value>Qul ara’aytum in asbaha maaa’ukum ghawran famai ya’teekum bimaaa’im ma’een {Say, “Have you considered: if your water was to become sunken [into the earth], then who could bring you flowing water?”}</value>
+  </data>
+  <data name="s4" xml:space="preserve">
+    <value>Allazee khalaqa sab’a samaawaatin tibaaqam maa taraa fee khalqir rahmaani min tafaawut farji’il basara hal taraa min futoor {[And] who created seven heavens in layers. You do not see in the creation of the Most Merciful any inconsistency. So return [your] vision [to the sky]; do you see any breaks?}</value>
+  </data>
+  <data name="s5" xml:space="preserve">
+    <value>Summar ji’il basara karrataini yanqalib ilaikal basaru khaasi’anw wa huwa haseer {Then return [your] vision twice again. [Your] vision will return to you humbled while it is fatigued}</value>
+  </data>
+  <data name="s6" xml:space="preserve">
+    <value>Wa laqad zaiyannas samaaa’ad dunyaa bimasaa beeha wa ja’alnaahaa rujoomal lish shayaateeni wa a’tadnaa lahum ‘azaabas sa’eer {And We have certainly beautified the nearest heaven with stars and have made [from] them what is thrown at the devils and have prepared for them the punishment of the Blaze}</value>
+  </data>
+  <data name="s7" xml:space="preserve">
+    <value>Wa lillazeena kafaroo bi rabbihim ‘azaabu jahannama wa bi’sal maseer {And for those who disbelieved in their Lord is the punishment of Hell, and wretched is the destination}</value>
+  </data>
+  <data name="s8" xml:space="preserve">
+    <value>Izaaa ulqoo feehaa sami’oo lahaa shaheeqanw wa hiya tafoor {When they are thrown into it, they hear from it a [dreadful] inhaling while it boils up}</value>
+  </data>
+  <data name="s9" xml:space="preserve">
+    <value>Takaadu tamayyazu minal ghaizz kullamaaa ulqiya feehaa fawjun sa alahum khazanatuhaaa alam ya’tikum nazeer {It almost bursts with rage. Every time a company is thrown into it, its keepers ask them, “Did there not come to you a warner?”}</value>
+  </data>
+</root>

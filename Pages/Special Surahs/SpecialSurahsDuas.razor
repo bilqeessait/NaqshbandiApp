@@ -1,0 +1,44 @@
+﻿@page "/specialsurahsduas"
+@inject NavigationManager NavigationManager
+@using System.Globalization
+@inject IStringLocalizer<SpecialSurahsDuas> Loc
+
+<PageTitle>Naqshbandi App</PageTitle>
+
+<h2>Naqshbandi App</h2>
+
+@Loc["Special Surahs and Duas"]
+
+<div class="table-responsive">
+    <table class="table table-bordered table-sm" style="height:240px;vertical-align:middle;z-index:10">
+
+        <tr>
+            <td align="center"><div @onclick="NavigateToSY"><img src="/images/book.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["surahyaseen"]</font></div></td>
+        </tr>
+        <tr>
+            <td align="center"><div @onclick="NavigateToSN"><img src="/images/book.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["surahnaba"]</font></div></td>
+        </tr>
+        <tr>
+            <td align="center"><div @onclick="NavigateToSM"><img src="/images/book.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["surahmulk"]</font></div></td>
+        </tr>
+        <tr>
+            <td align="center"><div @onclick="NavigateToSS"><img src="/images/book.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["surahsajidah"]</font></div></td>
+        </tr>
+        <tr>
+            <td align="center"><div @onclick="NavigateToSAN"><img src="/images/book.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["surahkafiroon"]</font></div></td>
+        </tr>
+        <tr>
+            <td align="center"><div @onclick="NavigateToSK"><img src="/images/book.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["surahalamnashrah"]</font></div></td>
+        </tr>
+
+    </table>
+</div>
+@code {
+
+    private void NavigateToSY() { NavigationManager.NavigateTo("surahyaseen"); }
+    private void NavigateToSN() { NavigationManager.NavigateTo("surahnaba"); }
+    private void NavigateToSM() { NavigationManager.NavigateTo("surahmulk"); }
+    private void NavigateToSS() { NavigationManager.NavigateTo("surahsajidah"); }
+    private void NavigateToSAN() { NavigationManager.NavigateTo("surahalamnashrah"); }
+    private void NavigateToSK() { NavigationManager.NavigateTo("surahkafiroon"); }
+}

@@ -1,0 +1,36 @@
+﻿@page "/"
+@inject NavigationManager NavigationManager
+@using System.Globalization
+@inject IStringLocalizer<Index> Loc
+
+<PageTitle>Naqshbandi App</PageTitle>
+
+<h2>Naqshbandi App</h2>
+
+@Loc["Welcome"]
+
+<div class="table-responsive">
+    <table class="table table-bordered table-sm" style="height:240px;vertical-align:middle;z-index:10">
+        <tr>
+            <td align="center"><div @onclick="NavigateToSH"><img src="/images/book.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["specialsohbets"]</font></div></td>
+            <td align="center"><div @onclick="NavigateToSA"><img src="/images/tasbeeh.png" style="width:auto;height:55px" /><br><font style="font-size:12px">@Loc["salaahawrads"]</font></div></td>
+        </tr>
+        <tr>
+            <td align="center"><div @onclick="NavigateToDA"><img src="/images/tasbeeh.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["dailyawrads"]</font></div></td>
+            <td align="center"><div @onclick="NavigateToSS"><img src="/images/salaah.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["specialsalaah"]</font></div></td>
+        </tr>
+        <tr>
+            <td align="center"><div @onclick="NavigateToSD"><img src="/images/book.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["specialsurahsduas"]</font></div></td>
+            <td align="center"><div @onclick="NavigateToDS"><img src="/images/salaah.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["dailysalaahnav"]</font></div></td>
+        </tr>
+    </table>
+</div>
+@code {
+
+    private void NavigateToSH() { NavigationManager.NavigateTo("specialsohbets"); }
+    private void NavigateToSA() { NavigationManager.NavigateTo("salaahawrads"); }
+    private void NavigateToDA() { NavigationManager.NavigateTo("dailyawrads"); }
+    private void NavigateToSS() { NavigationManager.NavigateTo("specialsalaah"); }
+    private void NavigateToSD() { NavigationManager.NavigateTo("specialsurahsduas"); }
+    private void NavigateToDS() { NavigationManager.NavigateTo("dailysalaahnav"); }
+}

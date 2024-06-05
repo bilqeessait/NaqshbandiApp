@@ -1,0 +1,103 @@
+﻿@page "/maghribsalaah"
+@inject NavigationManager NavigationManager
+@using System.Globalization
+@inject IStringLocalizer<MaghribSalaah> Loc
+
+<PageTitle>Naqshbandi App</PageTitle>
+
+<h2>Naqshbandi App</h2>
+
+@Loc["Maghrib Salaah"]
+
+<div class="table-responsive">
+    <table class="table table-bordered table-sm" style="height:240px;vertical-align:middle;z-index:10">
+        @*<tr>
+        <td align="center"><div @onclick="NavigateToSH"><img src="/images/book.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["specialsohbets"]</font></div></td>
+        <td align="center"><div @onclick="NavigateToSA"><img src="/images/tasbeeh.png" style="width:auto;height:55px" /><br><font style="font-size:12px">@Loc["salaahawrads"]</font></div></td>
+        </tr>*@
+        <tr>
+            <td align="center"><div @onclick="NavigateToWH"><img src="/images/wudu.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["Wudhu"]</font></div></td>
+
+        </tr>
+        <tr>
+            <td align="center"><div @onclick="NavigateToAD"><img src="/images/athan.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["adhan"]</font></div></td>
+
+        </tr>
+        <tr>
+            <td align="center"><div @onclick="NavigateToFT"><img src="/images/salaah.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["sunnahsalaah2"]</font></div></td>
+        </tr>
+        <tr>
+            <td align="center"><div @onclick="NavigateToSH"><img src="/images/salaah.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["shahadah"]</font></div></td>
+        </tr>
+        <tr>
+            <td align="center"><div @onclick="NavigateToFG"><img src="/images/book.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["forgiveness100"]</font></div></td>
+
+        </tr>
+        
+        <tr>
+            <td align="center"><div @onclick="NavigateToSS"><img src="/images/book.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["surahsincerity"]</font></div></td>
+        </tr>
+        <tr>
+            <td align="center"><div @onclick="NavigateToDB"><img src="/images/book.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["duabefore"]</font></div></td>
+        </tr>
+        <tr>
+            <td align="center"><div @onclick="NavigateToSF"><img src="/images/book.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["surahfatiha"]</font></div></td>
+
+        </tr>
+        <tr>
+            <td align="center"><div @onclick="NavigateToIQ"><img src="/images/athan.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["iqamah"]</font></div></td>
+
+        </tr>
+        <tr>
+            <td align="center"><div @onclick="NavigateToFF"><img src="/images/salaah.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["fardsalaah3"]</font></div></td>
+        </tr>
+        <tr>
+            <td align="center"><div @onclick="NavigateToDA"><img src="/images/book.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["duaafter1"]</font></div></td>
+
+        </tr>
+        <tr>
+            <td align="center"><div @onclick="NavigateToFT"><img src="/images/salaah.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["sunnahsalaah2"]</font></div></td>
+        </tr>
+        <tr>
+            <td align="center"><div @onclick="NavigateToSJ"><img src="/images/book.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["surahsajidah"]</font></div></td>
+
+        </tr>
+        <tr>
+            <td align="center"><div @onclick="NavigateToSS"><img src="/images/book.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["surahsincerity"]</font></div></td>
+        </tr>
+        <tr>
+            <td align="center"><div @onclick="NavigateToSD"><img src="/images/book.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["surahdaybreak"]</font></div></td>
+        </tr>
+        <tr>
+            <td align="center"><div @onclick="NavigateToSM"><img src="/images/book.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["surahmen"]</font></div></td>
+
+        </tr>
+        <tr>
+            <td align="center"><div @onclick="NavigateToDAA"><img src="/images/book.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["duaafter2"]</font></div></td>
+
+        </tr>
+        <tr>
+            <td align="center"><div @onclick="NavigateToSF"><img src="/images/book.png" style="width:auto;height:60px" /><br><font style="font-size:12px">@Loc["surahfatiha"]</font></div></td>
+
+        </tr>
+    </table>
+</div>
+@code {
+
+    private void NavigateToAD() { NavigationManager.NavigateTo("adhan"); }
+    private void NavigateToSH() { NavigationManager.NavigateTo("shahadah"); }
+    private void NavigateToFG() { NavigationManager.NavigateTo("forgiveness100"); }
+    private void NavigateToSS() { NavigationManager.NavigateTo("surahsincerity"); }
+    private void NavigateToSF() { NavigationManager.NavigateTo("surahfatiha"); }
+    private void NavigateToSD() { NavigationManager.NavigateTo("surahdaybreak"); }
+    private void NavigateToSM() { NavigationManager.NavigateTo("surahmen"); }
+    private void NavigateToWH() { NavigationManager.NavigateTo("wudhu"); }
+    private void NavigateToSJ() { NavigationManager.NavigateTo("surahsajidah"); }
+    private void NavigateToIQ() { NavigationManager.NavigateTo("iqamah"); }
+    private void NavigateToFT() { NavigationManager.NavigateTo("sunnahsalaah2"); }
+    private void NavigateToFF() { NavigationManager.NavigateTo("fardsalaah3"); }
+    private void NavigateToDB() { NavigationManager.NavigateTo("duabefore"); }
+    private void NavigateToDA() { NavigationManager.NavigateTo("duaafter1"); }
+    private void NavigateToDAA() { NavigationManager.NavigateTo("duaafter2"); }
+
+}

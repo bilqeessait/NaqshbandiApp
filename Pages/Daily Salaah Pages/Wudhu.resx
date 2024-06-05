@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="s0" xml:space="preserve">
+    <value>How to perform Wudhu</value>
+  </data>
+  <data name="s10" xml:space="preserve">
+    <value>Step 3:</value>
+  </data>
+  <data name="s11" xml:space="preserve">
+    <value>Take water into your mouth</value>
+  </data>
+  <data name="s12" xml:space="preserve">
+    <value>*Use your right hand to cup water into your mouth three times. Swish it around in your cheeks. Do this thoroughly.</value>
+  </data>
+  <data name="s13" xml:space="preserve">
+    <value>Step 4:</value>
+  </data>
+  <data name="s14" xml:space="preserve">
+    <value>Inhale water into your nose</value>
+  </data>
+  <data name="s15" xml:space="preserve">
+    <value>*Use your right hand to cup water and inhale it into your nose and blow out three times. Snort sharply and abruptly without taking too much water into your nose and choking yourself. If you cannot inhale water into your nose, you can wet your fingers and put water on the lower part of your nostrils.</value>
+  </data>
+  <data name="s16" xml:space="preserve">
+    <value>Step 5:</value>
+  </data>
+  <data name="s17" xml:space="preserve">
+    <value>Wash your face</value>
+  </data>
+  <data name="s18" xml:space="preserve">
+    <value>*Wash your face three times by spreading your hands from your right ear to the left, and from the hairline to the chin.</value>
+  </data>
+  <data name="s19" xml:space="preserve">
+    <value>Step 6:</value>
+  </data>
+  <data name="s20" xml:space="preserve">
+    <value>Wash your lower arms from wrists to elbows, leaving no part dry</value>
+  </data>
+  <data name="s21" xml:space="preserve">
+    <value>*From your wrist to your elbow, wash your right arm with your left hand three times and then wash your left arm with your right hand three times. (If you have a cast, you are allowed to simply wipe over it instead.)</value>
+  </data>
+  <data name="s22" xml:space="preserve">
+    <value>Step 7:</value>
+  </data>
+  <data name="s23" xml:space="preserve">
+    <value>Wash your forehead</value>
+  </data>
+  <data name="s24" xml:space="preserve">
+    <value>*Using your wet hands, gently wash your forehead three times, making sure to wet the hair as well.</value>
+  </data>
+  <data name="s25" xml:space="preserve">
+    <value>Step 8:</value>
+  </data>
+  <data name="s26" xml:space="preserve">
+    <value>Wipe your ears inside and out</value>
+  </data>
+  <data name="s27" xml:space="preserve">
+    <value>*Use your thumb to clean behind your ears from the bottom upward. Make sure to clean inside your ears as well. This is also done three times, in each ear.</value>
+  </data>
+  <data name="s28" xml:space="preserve">
+    <value>Step 9:</value>
+  </data>
+  <data name="s29" xml:space="preserve">
+    <value>Wash both of your feet</value>
+  </data>
+  <data name="s3" xml:space="preserve">
+    <value>Step 1: </value>
+  </data>
+  <data name="s30" xml:space="preserve">
+    <value>*Clean up to the ankles and be sure water goes between the toes. Use your pinky finger and go through each toe to eliminate anything between. Start with your right foot and scrub each foot three times.</value>
+  </data>
+  <data name="s31" xml:space="preserve">
+    <value>What nullifies (breaks) the Wudhu</value>
+  </data>
+  <data name="s32" xml:space="preserve">
+    <value>The following actions nullify the wudhu and require you to reperform the wudhu: natural discharges, including urination, vomiting, defecation, excessive bleeding, and gas. Deep sleep also nullifies wudu.</value>
+  </data>
+  <data name="s4" xml:space="preserve">
+    <value>Make niyyah (intention) to perform wudu, and say "Bismillah" (in the name of Allah) before starting wudu.</value>
+  </data>
+  <data name="s5" xml:space="preserve">
+    <value>*Niyyah is the Islamic concept of performing an act for the sake of Allah. To truly perform wudu, you should center yourself and quiet your thoughts, focusing seriously on what you are doing (intending to perform wudu (ablution)).</value>
+  </data>
+  <data name="s6" xml:space="preserve">
+    <value>*Niyyah is not said out loud and should be made in the heart; focusing on the phrase "Bismillah" (in the name of Allah) is a good way to accomplish the necessary centering. Say it out loud or silently to yourself, whichever makes you comfortable.</value>
+  </data>
+  <data name="s7" xml:space="preserve">
+    <value>Step 2:</value>
+  </data>
+  <data name="s8" xml:space="preserve">
+    <value>Wash each of your hands</value>
+  </data>
+  <data name="s9" xml:space="preserve">
+    <value>*Use your left hand to wash your right hand. Do this three times. After that, use your right hand to wash your left hand three times. Make sure to wash in between your fingers and all the way up to your wrists.</value>
+  </data>
+</root>

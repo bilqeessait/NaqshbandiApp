@@ -1,0 +1,258 @@
+﻿@page "/pushmessagesend"
+@inject IJSRuntime JS;
+@inject HttpClient Http;
+@implements IAsyncDisposable
+
+<h3>Push Messaging Demo - Send</h3>
+<hr style="color:grey">
+<div class="alert-danger">@NetworkNotAvailable</div>
+<div class="alert-success">@NetworkAvailable</div>
+
+<hr style="color:grey">
+
+<div class="table-responsive">
+    <div class="table table-bordered table-sm" style="vertical-align:middle;z-index:10;border-color:white;">
+        <div id="send_div">
+            <b>Send Notification to Profile</b>
+            <br>
+            <br>
+            <EditForm Model="@PushSendCat" OnValidSubmit=@ValidSendFormSubmitted>
+                <InputRadioGroup @bind-Value="@SendModel.SendName">
+                    @foreach (var option in PushSendCat.Options)
+                    {
+                        <div style="padding-left:50px">
+                            <label>
+                                <InputRadio id="pushSendTags" Value="option.Name" Checked="option.Value" />
+                                @option.Name
+                            </label>
+                        </div>
+                    }
+                </InputRadioGroup>
+                Title<br>
+                <InputText @bind-Value="SendMessageModel.TitleText" style="border-radius: 4px;color: black;margin: 4px 4px;padding: 10px;font-size: 18px;width:98%;border-color:lightgrey;border-block-width:thin" />
+                <br>
+                <br>
+                Message<br>
+                <InputTextArea @bind-Value="SendMessageModel.MessageText" rows="2" style="border-radius: 4px;color: black;margin: 4px 4px;padding: 10px;font-size: 18px;width:98%;border-color:lightgrey;border-block-width:thin" />
+                <br>
+                <input type="submit" style="background-color: #585858;border-radius: 4px;color: white;margin: 4px 4px;padding: 10px;font-size: 18px;width:98%;border-color:white" value="Send Message to Profile" />
+            </EditForm>
+            <br>
+            <div class="alert-danger">@sendMessagetext</div>
+            <div class="alert-danger">@sendResult</div>
+            <hr style="color:grey">
+        </div>
+    </div>
+</div>
+<br />
+<div class="table-responsive">
+    <div class="table table-bordered table-sm" style="vertical-align:middle;z-index:10;border-color:white;">
+        <b>Incoming Messages</b>
+        <div id="messages"></div>
+    </div>
+</div>
+
+@code
+{
+    string LocalPushTokenValue = "placeholder";
+
+    public class PushMessageModel
+    {
+        public string TitleText { get; set; }
+        public string MessageText { get; set; }
+    }
+    PushMessageModel SendMessageModel = new PushMessageModel()
+    {
+            TitleText = "Naqshbandi App POC",
+            MessageText = "Sample message text." 
+    };
+
+    public class PushSendModel
+    {
+        public string SendName { get; set; }
+        public bool SendValue { get; set; }
+    }
+    //public PushSendModel SendModel { get; set; } = new();
+    PushSendModel SendModel = new PushSendModel()
+        {
+            SendName = "Turkey" // default value
+        };
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        //JS.InvokeVoidAsync("clearMessages");
+
+    }
+
+    public class PushCategory
+    {
+        public List<Option> Options { get; set; }
+    }
+
+    public class Option
+    {
+        public string Name { get; set; }
+
+        public bool Value { get; set; }
+    }
+
+
+    private PushCategory PushSendCat = new()
+        {
+            Options = new List<Option>
+    {
+            new()
+            {
+                Name = "Turkey",
+                Value = true,
+            },
+            new()
+            {
+                Name = "South-Africa",
+                Value = false,
+            },
+            new()
+            {
+                Name = "Other",
+                Value = false,
+            }
+            },
+        };
+
+    string sendResult = "";
+    string serverSendResult = "";
+    string sendMessagetext = "";
+
+    void ValidSendFormSubmitted(EditContext editContext)
+    {
+
+        bool isSendValid = true;
+        serverSendResult = "";
+
+        if (!IsOnline)
+        {
+            serverSendResult = "You are currently Offline, please try again when you are back online";
+        }
+        else
+        {
+
+            if (SendModel.SendName.Trim() == "") { isSendValid = false; serverSendResult += "At least one profile choice is required."; }
+            if (SendMessageModel.TitleText == "") { isSendValid = false; serverSendResult += " A Send Title is required."; }
+            if (SendMessageModel.MessageText == "") { isSendValid = false; serverSendResult += " A Send Message is required."; }
+
+            //Console.WriteLine("isSendValid:" + isSendValid.ToString() + " : " + serverSendResult);
+
+            if (isSendValid)
+            {
+                var sendResultTmp = sendPush(SendModel.SendName, SendMessageModel.TitleText, SendMessageModel.MessageText);
+            }
+
+        }
+    }
+
+    //Timer to wait for Send API response
+    private static System.Timers.Timer aTimer;
+    private int counter = 10;
+    public void StartTimer()
+    {
+        aTimer = new System.Timers.Timer(1000);
+        aTimer.Elapsed += CountDownTimer;
+        aTimer.Enabled = true;
+    }
+
+    public void CountDownTimer(Object source, System.Timers.ElapsedEventArgs e)
+    {
+        if (counter > 0 && sendResult == "Please wait ...")
+        {
+            counter -= 1;
+        }
+        else
+        {
+            aTimer.Enabled = false;
+            aTimer.Dispose();
+        }
+        InvokeAsync(StateHasChanged);
+        if (counter == 0)
+        {
+            sendResult = "Send failed.";
+        }
+    }
+
+    public async Task<string> sendPush(string sendTag, string titleValue, string messageValue)
+    {
+        var apiSend = "https://af-es365-notificationhubpoc.azurewebsites.net/api/Send?code=6M94vf2DweIF2W3_WrQgb7HRsj4rLa7z4xznWU5drn-kAzFu5KFT6A==";
+        apiSend += "&tag=" + sendTag + "&title=" + titleValue + "&message=" + messageValue;
+        //Console.WriteLine("apiSend:" + apiSend);
+        //FormValidation = await Http.GetStringAsync(apiRegister).Result.ToString();
+
+        var httpClient = new HttpClient();
+        try
+        {
+            sendResult = "Please wait ...";
+            var result = await httpClient.GetStringAsync(apiSend);
+            sendResult = result.ToString();
+            httpClient.Dispose();
+            StartTimer();
+        }
+        catch (Exception ex)
+        {
+            sendResult = "Error " + ex.ToString();
+            httpClient.Dispose();
+        }
+        return sendResult;
+
+        //return FormValidation;
+    }
+
+    //Online check
+    string NetworkAvailable = "";
+    string NetworkNotAvailable = "";
+
+    [Parameter]
+    public RenderFragment Online { get; set; }
+
+    [Parameter]
+    public RenderFragment Offline { get; set; }
+
+    public bool IsOnline { get; set; }
+
+    [JSInvokable("Connection.StatusChanged")]
+    public void OnConnectionStatusChanged(bool isOnline)
+    {
+        if (IsOnline != isOnline)
+        {
+            IsOnline = isOnline;
+        }
+
+        if (isOnline)
+        {
+
+            NetworkNotAvailable = "";
+            NetworkAvailable = "You are currently Online";
+        }
+        else
+        {
+            NetworkNotAvailable = "You are currently Offline";
+            NetworkAvailable = "";
+        }
+
+        StateHasChanged();
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+
+        await JS.InvokeVoidAsync("Connection.Initialize", DotNetObjectReference.Create(this));
+
+        LocalPushTokenValue = await JS.InvokeAsync<string>("getPushToken");
+
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        await JS.InvokeVoidAsync("Connection.Dispose");
+    }
+
+
+    }

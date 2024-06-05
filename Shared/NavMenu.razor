@@ -1,0 +1,77 @@
+﻿@using System.Globalization
+@inject IStringLocalizer<NavMenu> Loc
+<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href=""><img src="./icon-192.png" style="height:32px;vertical-align:text-bottom"> Naqshbandi</a>
+        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</div>
+
+<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
+    <nav class="flex-column">
+        <div class="nav-item px-3 lh-sm">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="oi oi-home" aria-hidden="true"></span> @Loc["home"]
+            </NavLink>
+        </div>
+        <div class="nav-item px-3 lh-sm">
+            <NavLink class="nav-link" href="settings" Match="NavLinkMatch.All">
+                <span class="oi oi-cog" aria-hidden="true"></span> @Loc["settings"]
+            </NavLink>
+        </div>
+       @* <div class="nav-item px-3">
+            <NavLink class="nav-link" href="pushmessages">
+                <span class="oi oi-chat" aria-hidden="true"></span> Push Msg Registration
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="pushmessagesend">
+                <span class="oi oi-chat" aria-hidden="true"></span> Push Msg Send
+            </NavLink>
+        </div>*@
+        <div class="nav-item px-3 lh-sm">
+            <NavLink class="nav-link" href="specialsohbets">
+                <span class="oi oi-link-intact" aria-hidden="true"></span> @Loc["specialsohbets"]
+            </NavLink>
+        </div>
+        <div class="nav-item px-3 lh-sm">
+            <NavLink class="nav-link" href="salaahawrads">
+                <span class="oi oi-link-intact" aria-hidden="true"></span> @Loc["salaahawrads"]
+            </NavLink>
+        </div>
+        <div class="nav-item px-3 lh-sm">
+            <NavLink class="nav-link" href="dailyawrads">
+                <span class="oi oi-link-intact" aria-hidden="true"></span> @Loc["dailyawrads"]
+            </NavLink>
+        </div>
+        <div class="nav-item px-3 lh-sm">
+            <NavLink class="nav-link" href="specialsalaah">
+                <span class="oi oi-link-intact" aria-hidden="true"></span> @Loc["specialsalaah"]
+            </NavLink>
+        </div>
+        <div class="nav-item px-3 lh-sm">
+            <NavLink class="nav-link" href="specialsurahsduas">
+                <span class="oi oi-link-intact" aria-hidden="true"></span> @Loc["specialsurahsduas"]
+            </NavLink>
+        </div>
+        <div class="nav-item px-3 lh-sm">
+            <NavLink class="nav-link" href="dailysalaahnav">
+                <span class="oi oi-link-intact" aria-hidden="true"></span> @Loc["dailysalaahnav"]
+            </NavLink>
+        </div>
+    </nav>
+</div>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+
+}

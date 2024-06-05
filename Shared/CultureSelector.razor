@@ -1,0 +1,52 @@
+﻿@using System.Globalization
+@inject IJSRuntime JS
+@inject NavigationManager Navigation
+
+    <label>
+    <select @bind="Culture" class="form-select form-select-lg mb-3">
+            @foreach (var culture in supportedCultures)
+            {
+            <option value="@culture">@getCultureDisplayName(culture.Name)</option>
+            }
+        </select>
+    </label>
+
+@code
+{
+    private CultureInfo[] supportedCultures = new[]
+    {
+        new CultureInfo("en-ZA"),
+        new CultureInfo("af-ZA"),
+        new CultureInfo("xh-ZA"),
+    };
+
+    private CultureInfo Culture
+    {
+        get => CultureInfo.CurrentCulture;
+        set
+        {
+            if (CultureInfo.CurrentCulture != value)
+            {
+                var js = (IJSInProcessRuntime)JS;
+                js.InvokeVoid("blazorCulture.set", value.Name);
+
+                Navigation.NavigateTo(Navigation.Uri, forceLoad: true);
+            }
+        }
+    }
+
+    Dictionary<string, string> CultureList = new Dictionary<string, string>
+    {
+        { "en-ZA", "English (South Africa)"},
+        { "af-ZA", "Afrikaans (Suid Africa)"},
+        { "xh-ZA", "isiXhosa (Mzantsi Afrika)"}
+    };
+
+
+
+    private string getCultureDisplayName(string currCulture)
+    {
+        return CultureList[currCulture];
+    }
+
+}
